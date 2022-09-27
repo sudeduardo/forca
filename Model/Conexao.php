@@ -4,10 +4,10 @@ class Conexao{
  
     public static function getConexao() {
         
-        $local = 'mysql.hostinger.com.br';
-        $banco = 'u910052122_forca';
-        $usuario = 'u910052122_root';
-        $senha = 'Carlos.1998';
+        $local = '';
+        $banco = '';
+        $usuario = '';
+        $senha = '';
         
         if (!isset(self::$instance)) {
             self::$instance = new PDO("mysql:host=$local;dbname=$banco", $usuario, $senha);
